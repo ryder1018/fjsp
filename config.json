@@ -1,0 +1,33 @@
+{
+    "env_paras": {
+        "batch_size": 16,
+        "num_jobs": 10,
+        "num_mas": 5,
+        "valid_batch_size": 100,
+        "show_mode": "no_show",
+        "ope_feat_dim": 6,
+        "ma_feat_dim": 3
+    },
+    "model_paras": {
+        "out_size_ma": 64,
+        "out_size_ope": 64,
+        "actor_lr": 0.0003,
+        "critic_lr": 0.001
+    },
+    "train_paras": {
+        "max_iterations": 1000,
+        "parallel_iter": 20,
+        "update_timestep": 1,
+        "save_timestep": 10,
+        "viz": false,
+        "viz_name": "FJSP_Training"
+    },
+    "test_paras": {
+        "data_path": "10_5",
+        "num_ins": 10,
+        "sample": false,
+        "num_sample": 100,
+        "num_average": 10,
+        "rules": ["DRL"]
+    }
+}
